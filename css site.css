@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #282828;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #00c2cb;
+}
+header nav a {
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: #e0ffff;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+header nav a:hover,
+header nav a.active {
+  background: #00c2cb;
+  color: #282828;
+  transition: 0.5s ease-out;
+  letter-spacing: 2px;
+}
+body {
+  background: #282828;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-tope {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1) {
+  color: #e0ffff;
+}
+section:nth-child(2) {
+  color: #282828;
+  background: #e0ffff;
+}
+section:nth-child(3) {
+  color: #e0ffff;
+}
+section:nth-child(4) {
+  color: #282828;
+  background: #e0ffff;
+}
+section:nth-child(5) {
+  color: #e0ffff;
+}
+section .container {
+  margin: 100px;
+}
+section h1 {
+  font-size: 3rem;
+  margin-right: 20px;
+}
+section h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  display: flex;
+}
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #00c2cb;
+}
+section .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/*solar system*/
+*{
+ box-sizing: border-box;
+} 
+
+.solarbody {
+display: flex;
+margin-top: 140px;
+}
+
+.spinner-box {
+width: 300px;
+height: 300px;
+background-color: transparent;
+}
+
+.solar-system {
+width: 250px;
+height: 250px;
+display: flex;
+justify-content: center;
+align-items: center,
+}
+
+.orbit {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #fafbfc;
+border-radius: 50%;
+}
+
+.earth-orbit {
+  width: 165px;
+  height: 165px;
+  animation:spin 12s linear 0s infinite;
+}
+  
+  .venus-orbit {
+  width: 120px;
+  height: 120px;
+  animation:spin 7.4s linear 0s infinite;
+  }
+  .mercury-orbit {
+  width: 90px;
+  height: 90px;
+  animation: spin 3s linear 0s infinite;
+  }
+  .planet {
+  position: absolute;
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+}
+.earth {
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  background-color: #6b93d6;  
+}
+  
+.venus {
+  top: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: #a57c1b;
+  }
+  
+  .mercury {
+  top: -5px;
+  width: 10px;
+  height: 10px;  
+  background-color: #a51b0b;
+  }
+
+  .sun {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fbc531;
+  box-shadow: 0 0 32px #fbc531;
+  }
+
+  @keyframes spin {
+   from{
+  transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
